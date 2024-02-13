@@ -1,0 +1,80 @@
+{
+  "name": "vuesplitingroup",
+  "displayName": "vueSplitInGroup",
+  "description": "split a vue 3 file into 2 editor window",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vuesplitingroup.scriptTemplateSplit",
+        "title": "Split in group a vue file"
+      },
+      {
+        "command": "vuesplitingroup.styleTemplateSplit",
+        "title": "Split in group a vue file"
+      },
+      {
+        "command": "vuesplitingroup.scriptTemplateJoin",
+        "title": "join in group a vue file"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vuesplitingroup.scriptTemplateSplit",
+        "key": "shift+ctrl+v",
+        "mac": "shift+cmd+v",
+        "when": "activeEditorCanSplitInGroup"
+      },
+      {
+        "command": "vuesplitingroup.scriptTemplateStyleJoin",
+        "key": "shift+ctrl+v",
+        "mac": "shift+cmd+v",
+        "when": "sideBySideEditorActive"
+      },
+      {
+        "command": "vuesplitingroup.styleTemplateSplit",
+        "key": "shift+ctrl+b",
+        "mac": "shift+cmd+b",
+        "when": "activeEditorCanSplitInGroup"
+      },
+      {
+        "command": "vuesplitingroup.scriptTemplateStyleJoin",
+        "key": "shift+ctrl+b",
+        "mac": "shift+cmd+b",
+        "when": "sideBySideEditorActive"
+      }
+    ],
+    "configuration": {
+      "title": "Vue split in group",
+      "properties": {
+        "vuesplitingroup.toggleSideBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Should toggle the sidebar?"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
