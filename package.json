@@ -1,8 +1,8 @@
 {
   "name": "vuesplitingroup",
   "displayName": "vueSplitInGroup",
-  "description": "split a vue 3 file into 2 editor window",
-  "version": "0.0.1",
+  "description": "split a vue 3 file into 2 editors",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -22,33 +22,33 @@
         "title": "Split in group a vue file"
       },
       {
-        "command": "vuesplitingroup.scriptTemplateJoin",
+        "command": "vuesplitingroup.scriptTemplateStyleJoin",
         "title": "join in group a vue file"
       }
     ],
     "keybindings": [
       {
         "command": "vuesplitingroup.scriptTemplateSplit",
-        "key": "shift+ctrl+v",
-        "mac": "shift+cmd+v",
+        "key": "ctrl+alt+z",
+        "mac": "cmd+alt+z",
         "when": "activeEditorCanSplitInGroup"
       },
       {
         "command": "vuesplitingroup.scriptTemplateStyleJoin",
-        "key": "shift+ctrl+v",
-        "mac": "shift+cmd+v",
+        "key": "ctrl+alt+z",
+        "mac": "cmd+alt+z",
         "when": "sideBySideEditorActive"
       },
       {
         "command": "vuesplitingroup.styleTemplateSplit",
-        "key": "shift+ctrl+b",
-        "mac": "shift+cmd+b",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
         "when": "activeEditorCanSplitInGroup"
       },
       {
         "command": "vuesplitingroup.scriptTemplateStyleJoin",
-        "key": "shift+ctrl+b",
-        "mac": "shift+cmd+b",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
         "when": "sideBySideEditorActive"
       }
     ],

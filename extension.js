@@ -126,16 +126,12 @@ function activate(context) {
           await vscode.commands.executeCommand("editor.foldLevel1");
           await setPosition(position);
         }
-        vscode.window.showInformationMessage(
-          "Commande vuesplitingroup exécutée avec succès !"
-        );
       } catch (error) {
         vscode.window.showErrorMessage(
-          "Une erreur s'est produite : " + error.message
+          "An error has occurred : " + error.message
         );
       }
       // Display a message box to the user
-      vscode.window.showInformationMessage("extension from vuesplitingroup!");
     }
   );
 
@@ -193,16 +189,12 @@ function activate(context) {
           await vscode.commands.executeCommand("editor.foldLevel1");
           await setPosition(position);
         }
-        vscode.window.showInformationMessage(
-          "Commande vuesplitingroup exécutée avec succès !"
-        );
       } catch (error) {
         vscode.window.showErrorMessage(
-          "Une erreur s'est produite : " + error.message
+          "An error has occurred : " + error.message
         );
       }
       // Display a message box to the user
-      vscode.window.showInformationMessage("extension from vuesplitingroup!");
     }
   );
 
@@ -215,16 +207,12 @@ function activate(context) {
         await vscode.commands.executeCommand(
           "workbench.action.joinEditorInGroup"
         );
-        vscode.window.showInformationMessage(
-          "Commande vuejoiningroup exécutée avec succès !"
-        );
       } catch (error) {
         vscode.window.showErrorMessage(
-          "Une erreur s'est produite : " + error.message
+          "An error has occurred : " + error.message
         );
       }
       // Display a message box to the user
-      vscode.window.showInformationMessage("extension from vuejoiningroup!");
     }
   );
 
