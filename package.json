@@ -2,6 +2,7 @@
   "name": "vuesplitingroup",
   "displayName": "vueSplitInGroup",
   "description": "split a vue 3 file into 2 editors",
+  "publisher": "SlimaneHamreras",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
@@ -9,6 +10,11 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "url": "https://github.com/selaimanh/vscode-vue-split-in-group"
+  },
+  "baseContentUrl": "https://github.com/selaimanh/vscode-vue-split-in-group/tree/main",
+  "baseImagesUrl": "https://github.com/selaimanh/vscode-vue-split-in-group/tree/main/images",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
