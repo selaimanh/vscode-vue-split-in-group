@@ -3,6 +3,7 @@
   "displayName": "vueSplitInGroup",
   "description": "split a vue 3 file into 2 editors",
   "publisher": "SlimaneHamreras",
+  "icon": "images/icone.png",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.86.0"
